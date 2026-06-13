@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://aisquads.ai/sitemap.xml
+
+# Crawl-delay hint (optional — remove if host is fast)
+Crawl-delay: 1

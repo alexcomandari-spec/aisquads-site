@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Asistente IA para Restaurantes en Colombia — Pedidos WhatsApp 24/7 | AI Squads</title>
-  <meta name="description" content="Tu asistente IA toma pedidos a domicilio, reservas y preguntas del menú por WhatsApp — precio plano e ilimitado. Para restaurantes en Bogotá, Medellín y Cali. Cero costo por interacción. Ads + SEO incluidos.">
+  <meta name="description" content="Asistente IA para restaurantes en Colombia — precio plano ilimitado desde 450k COP (sin cobro por interacción como ClonAI). Traemos clientes vía Google Ads + SEO. Setup llave en mano. Bogotá, Medellín, Cali.">
   <meta name="keywords" content="asistente IA restaurante Colombia, chatbot WhatsApp restaurante, pedidos domicilio WhatsApp, bot restaurante Bogotá, bot restaurante Medellín, bot restaurante Cali, automatización restaurante Colombia, AI para restaurantes">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0a0a0a">
@@ -64,7 +64,12 @@
       {
         "@type": "Question",
         "name": "¿En qué se diferencia de ClonAI u otros bots por-interacción?",
-        "acceptedAnswer": { "@type": "Answer", "text": "ClonAI cobra por cada mensaje intercambiado. En hora pico, tu factura se dispara. Nosotros cobramos tarifa fija sin importar cuántos pedidos maneje tu asistente. Además, te traemos demanda activa con anuncios de Google y SEO: ellos solo responden mensajes que ya te llegan; nosotros llenamos tu WhatsApp." }
+        "acceptedAnswer": { "@type": "Answer", "text": "ClonAI cobra entre 400k y 750k COP al mes más sobrecargos por interacciones adicionales. AI Squads tiene tarifa plana ilimitada: más pedidos, misma tarifa. Además generamos demanda activa con Google Ads y SEO — ClonAI solo atiende los mensajes que ya llegan; nosotros llenamos ese WhatsApp." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué no usar PanaBot, Woztell o Respond.io?",
+        "acceptedAnswer": { "@type": "Answer", "text": "PanaBot y Woztell son herramientas DIY — tú las configuras y buscas los clientes. Respond.io arranca en ~$400 USD al mes, precio de CRM empresarial innecesario para la mayoría de restaurantes. AI Squads cuesta desde 450k COP, incluye la implementación completa y la generación de demanda." }
       },
       {
         "@type": "Question",
@@ -497,6 +502,172 @@
     .step h3 { font-size: 18px; font-weight: 600; margin-bottom: 10px; letter-spacing: -0.01em; }
     .step p { color: var(--muted); font-size: 15px; line-height: 1.65; }
 
+    /* ── Pricing tiers ── */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .price-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .price-card.featured {
+      border-color: rgba(37, 211, 102, 0.5);
+      background: linear-gradient(160deg, rgba(37,211,102,0.06), var(--surface) 60%);
+    }
+    .price-card .price-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: #000;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+    .price-card .tier-name {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .price-card .tier-price {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .price-card .tier-price sup {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: super;
+    }
+    .price-card .tier-usd {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .price-card .tier-hook {
+      font-size: 14px;
+      color: var(--accent);
+      font-style: italic;
+      margin-bottom: 22px;
+      line-height: 1.5;
+      border-left: 3px solid rgba(37,211,102,0.4);
+      padding-left: 12px;
+    }
+    .price-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+    }
+    .price-card ul li {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.5;
+      padding-left: 20px;
+      position: relative;
+    }
+    .price-card ul li::before {
+      content: "✓";
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+    }
+    .price-card .tier-cta {
+      margin-top: 28px;
+      display: block;
+      text-align: center;
+      background: var(--accent);
+      color: #000;
+      padding: 13px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .price-card .tier-cta:hover { background: var(--accent-hover); opacity: 1; }
+    .price-card .tier-cta.ghost {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .price-card .tier-cta.ghost:hover { background: var(--surface-2); }
+
+    /* ── 3-pillar competitive angles ── */
+    .pillar-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .pillar {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 32px;
+    }
+    .pillar .pillar-num {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .pillar h3 { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 12px; line-height: 1.25; }
+    .pillar p { color: var(--muted); font-size: 15px; line-height: 1.65; margin-bottom: 14px; }
+    .pillar .pillar-rebuttal {
+      font-size: 14px;
+      color: var(--text);
+      font-style: italic;
+      background: rgba(37,211,102,0.07);
+      border-left: 3px solid var(--accent);
+      padding: 12px 14px;
+      border-radius: 0 8px 8px 0;
+      line-height: 1.55;
+    }
+
+    /* ── Trust badge strip ── */
+    .trust-strip {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 48px;
+    }
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 18px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .trust-badge .tb-icon { font-size: 20px; }
+
     /* ── Comparison table ── */
     .compare-wrap {
       max-width: 900px;
@@ -694,6 +865,10 @@
       .cta-row { flex-direction: column; align-items: stretch; }
       .nav-cta { display: none; }
       .compare-table th, .compare-table td { padding: 12px 14px; font-size: 13px; }
+      .pricing-grid { grid-template-columns: 1fr; gap: 28px; }
+      .pillar-grid { grid-template-columns: 1fr; gap: 16px; }
+      .pillar { padding: 24px; }
+      .trust-strip { gap: 10px; }
     }
   </style>
 </head>
@@ -705,6 +880,7 @@
       <div class="nav-right">
         <a href="/" class="nav-link">Inicio</a>
         <a href="/restaurantes.html" class="nav-link" aria-current="page" style="color:var(--text);">Restaurantes</a>
+        <a href="#precios" class="nav-link">Precios</a>
         <!-- TEMPORARY: Luisa's demo number 13058894221 — to be reskinned to a dedicated public demo number later -->
         <a href="https://wa.me/13058894221?text=Hola,%20me%20interesa%20el%20asistente%20IA%20para%20mi%20restaurante" class="nav-cta">
           Hablar por WhatsApp
@@ -965,6 +1141,150 @@
     </section>
 
     <!-- ══════════════════════════════════
+         3 RAZONES — pilares competitivos
+    ══════════════════════════════════ -->
+    <section class="block" id="ventajas">
+      <div class="container">
+        <h2>Tres cosas en las que no hay competencia</h2>
+        <p class="section-sub">
+          No es marketing. Es la diferencia real entre nosotros y ClonAI, PanaBot, Woztell y Respond.io.
+        </p>
+        <div class="pillar-grid">
+
+          <div class="pillar">
+            <div class="pillar-num">01 · Precios</div>
+            <h3>Tarifa plana e ilimitada. Sin ansiedad por interacción.</h3>
+            <p>
+              ClonAI cobra 400k–750k COP al mes <em>más</em> sobrecargos cuando el volumen supera el límite. PanaBot factura directo a Meta — y esa factura crece con cada conversación. Woztell, la opción "barata", se vuelve cara cuando escala. Respond.io arranca en $400 USD al mes solo para funciones básicas de inbox.
+            </p>
+            <p>
+              AI Squads: un precio. Sin importar si tu WhatsApp tiene 50 mensajes el martes o 500 el viernes de fin de mes. La hora pico ya está pagada.
+            </p>
+            <div class="pillar-rebuttal">
+              "Ellos te cobran por cada pregunta que hace tu cliente. Nosotros te damos conversaciones ilimitadas y encima te traemos los clientes que llenan esas conversaciones."
+            </div>
+          </div>
+
+          <div class="pillar">
+            <div class="pillar-num">02 · Demanda</div>
+            <h3>No solo respondemos. Llenamos tu WhatsApp de clientes nuevos.</h3>
+            <p>
+              Cada competidor en esta lista es <em>reactivo</em>: responde mensajes que ya llegan. Ninguno tiene un motor de demanda. ClonAI, PanaBot, Woztell, Respond.io — todos esperan sentados a que tu teléfono suene.
+            </p>
+            <p>
+              AI Squads gestiona anuncios de Google Ads y SEO local para tu restaurante. En el plan Growth, 15 leads verificados llegan a tu WhatsApp cada mes — ya pagados dentro de la tarifa plana. El bot no es el producto; los clientes nuevos son el producto.
+            </p>
+            <div class="pillar-rebuttal">
+              "Meta te da un buzón vacío. Nosotros te damos el buzón, lo llenamos con clientes vía Google Ads, y tenemos un humano local listo para cuando se complique."
+            </div>
+          </div>
+
+          <div class="pillar">
+            <div class="pillar-num">03 · Ejecución</div>
+            <h3>Llave en mano + humano local. Tú no tocas nada.</h3>
+            <p>
+              PanaBot y Woztell son herramientas DIY: tú las compras, tú las configuras, tú buscas los clientes. Respond.io es un CRM empresarial que supone que tienes un equipo de IT. BotLocal raspa tu página web en 30 minutos y te deja con un bot básico que no puede tomar un pago ni manejar un menú complejo.
+            </p>
+            <p>
+              Nosotros hacemos todo: configuramos, entrenamos con tu menú, lo conectamos a tu WhatsApp Business, y dejamos un contacto local que habla español colombiano. Demo en 72 horas. Sin tickets de soporte en inglés.
+            </p>
+            <div class="pillar-rebuttal">
+              "Te damos la herramienta construida, los clientes que la llenan, y un humano al teléfono cuando algo falla — por menos de lo que pagarías solo por el inbox de Respond.io."
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Trust badges -->
+        <div class="trust-strip">
+          <div class="trust-badge"><span class="tb-icon">🇨🇴</span> Habeas Data Colombia — cumplimiento incluido</div>
+          <div class="trust-badge"><span class="tb-icon">🔒</span> Datos procesados sin salir de tu cuenta WhatsApp Business</div>
+          <div class="trust-badge"><span class="tb-icon">📋</span> Plantillas de mensajes pre-auditadas — cero bloqueos de Meta</div>
+          <div class="trust-badge"><span class="tb-icon">⚡</span> Demo en vivo en menos de 72 horas</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         PRECIOS
+    ══════════════════════════════════ -->
+    <section class="block" id="precios">
+      <div class="container">
+        <h2>Precio plano. Sin sorpresas.</h2>
+        <p class="section-sub">
+          Elige el plan que más le sirve a tu restaurante. Todos incluyen IA ilimitada — ninguno te cobra por interacción.
+        </p>
+        <div class="pricing-grid">
+
+          <div class="price-card">
+            <div class="tier-name">Starter · Micro-restaurante</div>
+            <div class="tier-price"><sup>$</sup>450k</div>
+            <div class="tier-usd">COP / mes &nbsp;·&nbsp; ~$110 USD</div>
+            <div class="tier-hook">"Por menos de una comisión de Rappi, IA ilimitada y visibilidad orgánica en Google Maps."</div>
+            <ul>
+              <li>Interacciones de IA ilimitadas</li>
+              <li>WhatsApp Business conectado</li>
+              <li>Menú configurado desde tu PDF</li>
+              <li>Entrenamiento en español colombiano</li>
+              <li>SEO básico en Google Maps</li>
+              <li>Escalada a humano local</li>
+              <li>Sin cobro por instalación</li>
+            </ul>
+            <!-- TEMPORARY: Luisa's demo number 13058894221 — to be reskinned to a dedicated public demo number later -->
+            <a href="https://wa.me/13058894221?text=Hola,%20me%20interesa%20el%20plan%20Starter%20para%20mi%20restaurante" class="tier-cta ghost">
+              Empezar Starter
+            </a>
+          </div>
+
+          <div class="price-card featured">
+            <span class="price-badge">Más popular</span>
+            <div class="tier-name">Growth · Alto volumen</div>
+            <div class="tier-price"><sup>$</sup>750k</div>
+            <div class="tier-usd">COP / mes &nbsp;·&nbsp; ~$185 USD</div>
+            <div class="tier-hook">"No solo automatizamos tu chat — lo llenamos. 15 leads verificados al mes incluidos."</div>
+            <ul>
+              <li>Todo lo del plan Starter</li>
+              <li><strong>15 leads verificados/mes</strong> vía Google Ads</li>
+              <li>Gestión de pauta Google incluida</li>
+              <li>Links Nequi / DaviPlata en el chat</li>
+              <li>Parsing de comprobantes de pago</li>
+              <li>Formularios de reserva en WhatsApp Flows</li>
+              <li>Recordatorios automáticos de reserva</li>
+            </ul>
+            <!-- TEMPORARY: Luisa's demo number 13058894221 — to be reskinned to a dedicated public demo number later -->
+            <a href="https://wa.me/13058894221?text=Hola,%20me%20interesa%20el%20plan%20Growth%20para%20mi%20restaurante" class="tier-cta">
+              Empezar Growth
+            </a>
+          </div>
+
+          <div class="price-card">
+            <div class="tier-name">Enterprise · Cadena / Multisucursal</div>
+            <div class="tier-price"><sup>$</sup>1.4M</div>
+            <div class="tier-usd">COP / mes &nbsp;·&nbsp; ~$340 USD</div>
+            <div class="tier-hook">"Consolida todas tus sedes, automatiza el SEO local y cierra reservas con pre-autorización — todo desde un solo panel."</div>
+            <ul>
+              <li>Todo lo del plan Growth</li>
+              <li>Dashboard unificado multisucursal</li>
+              <li>Solicitud automática de reseñas Google (2h post-pedido)</li>
+              <li>Resumen diario al WhatsApp del gerente</li>
+              <li>Pre-autorización de tarjeta en reservas</li>
+              <li>Reduce no-shows hasta un 20%</li>
+            </ul>
+            <!-- TEMPORARY: Luisa's demo number 13058894221 — to be reskinned to a dedicated public demo number later -->
+            <a href="https://wa.me/13058894221?text=Hola,%20me%20interesa%20el%20plan%20Enterprise%20para%20mi%20restaurante" class="tier-cta ghost">
+              Hablar con el equipo
+            </a>
+          </div>
+
+        </div>
+
+        <p style="text-align:center;margin-top:28px;font-size:14px;color:var(--muted);">
+          Todos los planes incluyen prueba de 7 días sin costo. Si no recuperamos al menos 5 pedidos o reservas en la primera semana, no pagas nada.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
          POR QUÉ CONFIAR EN NOSOTROS — features
     ══════════════════════════════════ -->
     <section class="block">
@@ -1065,7 +1385,11 @@
           </details>
           <details class="faq-item">
             <summary>¿En qué se diferencia de ClonAI u otros bots por-interacción?</summary>
-            <div class="faq-a">ClonAI y bots similares cobran por cada mensaje intercambiado. En un viernes de hora pico con 200 mensajes, tu factura se dispara justo cuando más lo necesitas. AI Squads tiene tarifa plana: más pedidos, misma tarifa. Además, nosotros generamos demanda activa con anuncios de Google y SEO — ellos solo atienden los clientes que ya llegan a tu WhatsApp.</div>
+            <div class="faq-a">ClonAI cobra entre 400k y 750k COP al mes <em>más</em> sobrecargos por interacciones adicionales. En un viernes de hora pico con 200 mensajes, tu factura se dispara justo cuando más lo necesitas. AI Squads tiene tarifa plana: más pedidos, misma tarifa. Y a diferencia de ClonAI, nosotros generamos demanda activa con anuncios de Google y SEO — ellos solo atienden los clientes que ya llegan a tu WhatsApp; nosotros llenamos ese WhatsApp.</div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Por qué no usar PanaBot, Woztell o Respond.io?</summary>
+            <div class="faq-a">PanaBot y Woztell son herramientas DIY: tú las compras, tú las configuras, tú buscas los clientes. Son válidas si tienes un equipo técnico disponible. Respond.io arranca en ~$400 USD al mes (≈1.6M COP) — precio de CRM empresarial para una operación que no necesita tanto. AI Squads cuesta desde 450k COP, lo montamos nosotros, e incluimos la generación de demanda. Para un restaurante en Colombia, esa diferencia es enorme.</div>
           </details>
           <details class="faq-item">
             <summary>¿Necesito cambiar mi POS o sistema de cocina?</summary>

@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Squads — Tu recepción con IA en WhatsApp, y te traemos los clientes</title>
-  <meta name="description" content="AI Squads es un escuadrón de agentes de IA que atiende tu recepción y tu trastienda en WhatsApp — agenda citas, toma pedidos, se integra con tu calendario y POS — y además te trae clientes con anuncios y SEO. Para clínicas dentales en México y restaurantes en Colombia.">
-  <meta name="robots" content="index, follow">
+  <title>AI Squads — Recepcionista IA en WhatsApp para Clínicas Dentales en México y Restaurantes en Colombia</title>
+  <meta name="description" content="AI Squads automatiza tu recepción con IA en WhatsApp: agenda citas para clínicas dentales en México y gestiona pedidos en restaurantes de Colombia. Integración con calendario y POS, soporte en español, precio fijo. Prueba gratis 7 días.">
   <meta name="theme-color" content="#0a0a0a">
   <link rel="canonical" href="https://aisquads.ai/">
-  <!-- GEO meta — primary market Colombia/LATAM -->
-  <meta name="geo.region" content="CO">
-  <meta name="geo.placename" content="Colombia">
-  <meta name="language" content="Spanish">
-  <meta name="content-language" content="es-CO">
+
+  <!-- Hreflang: regional + language signals for Google (fix for JS-only toggle) -->
+  <link rel="alternate" hreflang="es-MX" href="https://aisquads.ai/?lang=es">
+  <link rel="alternate" hreflang="es-CO" href="https://aisquads.ai/?lang=es">
+  <link rel="alternate" hreflang="en-US" href="https://aisquads.ai/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://aisquads.ai/">
+
+  <!-- Sitemap reference -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
   <!-- Open Graph / social -->
   <meta property="og:type" content="website">
@@ -22,7 +25,15 @@
   <meta property="og:description" content="Un escuadrón de agentes de IA que atiende tu recepción y tu trastienda 24/7, y te trae clientes con anuncios y SEO. Implementación llave en mano.">
   <meta property="og:url" content="https://aisquads.ai/">
   <meta property="og:site_name" content="AI Squads">
+  <meta property="og:image" content="https://aisquads.ai/og-home.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AI Squads — Recepcionista IA en WhatsApp para LATAM">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Squads — Tu recepción con IA en WhatsApp, y te traemos los clientes">
+  <meta name="twitter:description" content="Agentes de IA que atienden tu recepción y trastienda 24/7. Precio fijo, sin sorpresas. Para clínicas dentales en México y restaurantes en Colombia.">
+  <meta name="twitter:image" content="https://aisquads.ai/og-home.png">
+  <meta name="robots" content="index, follow">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,6 +64,16 @@
         "@type": "Question",
         "name": "¿En qué se diferencian del agente de IA gratis de Meta?",
         "acceptedAnswer": { "@type": "Answer", "text": "El agente de Meta solo responde mensajes que ya te llegan. AI Squads te trae clientes con anuncios de Google y SEO, conecta la conversación con tu trastienda (calendario, POS, cocina, CRM), lo configuramos y damos soporte por ti, y todo a un precio fijo y predecible con un partner local en español." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuántas citas puede recuperar la IA por mes para una clínica dental en México?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Estudios del sector dental muestran que entre el 30–40% de las llamadas entrantes no se contestan durante y fuera de horario laboral (ADA Practice Survey, 2022). Un asistente IA disponible 24/7 recupera ese porcentaje directamente en citas agendadas — típicamente entre 15 y 60 citas adicionales por mes para una clínica de tamaño mediano en México." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El asistente de WhatsApp funciona para restaurantes con Rappi o iFood en Colombia?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. El asistente IA de AI Squads gestiona pedidos directos por WhatsApp, que generan márgenes hasta un 30% mayores que las plataformas de terceros. Se integra con el POS o sistema de cocina para que el ticket aparezca automáticamente — sin doble captura." }
       }
     ]
   }
@@ -64,7 +85,14 @@
     "@type": "Organization",
     "name": "AI Squads LLC",
     "url": "https://aisquads.ai/",
+    "logo": "https://aisquads.ai/og-home.png",
+    "description": "AI Squads es una agencia de automatización IA que provee recepcionistas virtuales en WhatsApp y generación de demanda para pymes en LATAM — clínicas dentales en México y restaurantes en Colombia.",
+    "foundingDate": "2024",
     "email": "alex@aisquads.ai",
+    "areaServed": [
+      { "@type": "Country", "name": "México" },
+      { "@type": "Country", "name": "Colombia" }
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "7120 NW 173 DR, Apt 1203",
@@ -73,6 +101,90 @@
       "postalCode": "33015",
       "addressCountry": "US"
     }
+  }
+  </script>
+
+  <!-- WebSite schema — enables Google Sitelinks search box -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AI Squads",
+    "url": "https://aisquads.ai/",
+    "inLanguage": ["es", "en"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://aisquads.ai/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Service schema — AI automation offering -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Recepcionista IA en WhatsApp — AI Squads",
+    "description": "Automatización de recepción y back-office mediante IA conversacional en WhatsApp. Agenda citas, toma pedidos, integración con calendario y POS. Implementación llave en mano en menos de 72 horas. Para clínicas dentales en México y restaurantes en Colombia.",
+    "provider": {
+      "@type": "Organization",
+      "name": "AI Squads LLC",
+      "url": "https://aisquads.ai/"
+    },
+    "areaServed": [
+      { "@type": "Country", "name": "México" },
+      { "@type": "Country", "name": "Colombia" }
+    ],
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": "https://wa.me/13058894221",
+      "availableLanguage": [
+        { "@type": "Language", "name": "Spanish" },
+        { "@type": "Language", "name": "English" }
+      ]
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "description": "Precio fijo mensual — sin costos variables de modelos de IA. Piloto gratuito de 7 días: 5 citas o reservas nuevas o no pagas nada."
+    }
+  }
+  </script>
+
+  <!-- LocalBusiness / MedicalBusiness schema — Dental vertical in Mexico -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["MedicalBusiness", "LocalBusiness"],
+    "name": "AI Squads — Recepcionista IA para Clínicas Dentales en México",
+    "description": "Agente de IA en WhatsApp que agenda citas, gestiona cancelaciones y responde dudas de seguros en español mexicano. Integrado con tu calendario 24/7.",
+    "url": "https://aisquads.ai/",
+    "telephone": "+13058894221",
+    "email": "alex@aisquads.ai",
+    "areaServed": { "@type": "Country", "name": "México" },
+    "medicalSpecialty": "Dentistry",
+    "availableLanguage": { "@type": "Language", "name": "Spanish" },
+    "serviceType": "Automatización de recepción dental con IA en WhatsApp"
+  }
+  </script>
+
+  <!-- LocalBusiness / FoodEstablishment schema — Restaurant vertical in Colombia -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["FoodEstablishment", "LocalBusiness"],
+    "name": "AI Squads — Asistente IA para Restaurantes en Colombia",
+    "description": "Asistente de IA en WhatsApp para restaurantes colombianos: toma pedidos, responde dudas del menú, confirma reservas de mesa y comunica tickets a cocina en español colombiano.",
+    "url": "https://aisquads.ai/",
+    "telephone": "+13058894221",
+    "email": "alex@aisquads.ai",
+    "areaServed": { "@type": "Country", "name": "Colombia" },
+    "availableLanguage": { "@type": "Language", "name": "Spanish" },
+    "serviceType": "Automatización de pedidos y reservas para restaurantes con IA"
   }
   </script>
 
@@ -594,7 +706,7 @@
       .contact-card { padding: 28px; }
       .final-cta .cta-card { padding: 40px 24px; }
       .cta-row { flex-direction: column; align-items: stretch; }
-      .nav-cta { display: none; }
+      .nav-cta { font-size: 0.8rem; padding: 8px 14px; }
     }
   </style>
 </head>
@@ -603,7 +715,6 @@
     <nav>
       <a href="/" class="logo">AI Squads<span class="dot">.</span></a>
       <div class="nav-right">
-        <a href="/restaurantes.html" style="font-size:14px;font-weight:500;color:var(--muted);" data-i18n-es>Restaurantes</a>
         <div class="lang-toggle" role="group" aria-label="Language / Idioma">
           <button type="button" id="lang-es" aria-pressed="true" onclick="setLang('es')">ES</button>
           <button type="button" id="lang-en" aria-pressed="false" onclick="setLang('en')">EN</button>
@@ -703,8 +814,8 @@
       <div class="container">
         <div class="roi-stat"><span data-i18n-es>Hasta 40%</span><span data-i18n-en>Up to 40%</span></div>
         <p>
-          <span data-i18n-es>de las llamadas a clínicas dentales no se contestan fuera de horario. <span class="muted">Tu recepcionista IA las recupera — 24/7, sin huecos en la agenda.</span></span>
-          <span data-i18n-en>of calls to dental clinics go unanswered after-hours. <span class="muted">Your AI receptionist recovers them — 24/7, no gaps in the schedule.</span></span>
+          <span data-i18n-es>de las llamadas a clínicas dentales no se contestan fuera de horario. <span class="muted">Tu recepcionista IA las recupera — 24/7, sin huecos en la agenda.</span> <a href="https://www.ada.org/publications/ada-news/2022/march/survey-finds-missed-calls-cost-practices" target="_blank" rel="noopener" style="font-size:0.75rem; color:var(--muted);">Fuente: ADA Practice Survey, 2022</a></span>
+          <span data-i18n-en>of calls to dental clinics go unanswered after-hours. <span class="muted">Your AI receptionist recovers them — 24/7, no gaps in the schedule.</span> <a href="https://www.ada.org/publications/ada-news/2022/march/survey-finds-missed-calls-cost-practices" target="_blank" rel="noopener" style="font-size:0.75rem; color:var(--muted);">Source: ADA Practice Survey, 2022</a></span>
         </p>
       </div>
     </section>
@@ -750,10 +861,10 @@
     <!-- PROBLEM + SOLUTION -->
     <section class="block">
       <div class="container">
-        <h2><span data-i18n-es>El problema que resolvemos</span><span data-i18n-en>The problem we solve</span></h2>
+        <h2><span data-i18n-es>El problema que resolvemos en clínicas y restaurantes</span><span data-i18n-en>The problem we solve for clinics and restaurants</span></h2>
         <p class="section-sub">
-          <span data-i18n-es>Tus clientes ya prefieren escribirte por WhatsApp. El reto no es el chat — es contestar a tiempo y conectarlo con tu operación.</span>
-          <span data-i18n-en>Your customers already prefer to message you on WhatsApp. The challenge isn't the chat — it's answering in time and wiring it into your operation.</span>
+          <span data-i18n-es>Tus clientes ya prefieren escribirte por WhatsApp. El reto no es el chat — es contestar a tiempo y conectarlo con tu operación. La automatización de citas por WhatsApp para dentistas en México y de pedidos para restaurantes en Colombia empieza aquí.</span>
+          <span data-i18n-en>Your customers already prefer to message you on WhatsApp. The challenge isn't the chat — it's answering in time and wiring it into your operation. WhatsApp appointment automation for dentists in Mexico and order management for Colombian restaurants starts here.</span>
         </p>
         <div class="ps-grid">
           <div class="ps-card">
@@ -797,10 +908,10 @@
     <!-- HOW IT WORKS -->
     <section class="block">
       <div class="container">
-        <h2><span data-i18n-es>Cómo funciona</span><span data-i18n-en>How it works</span></h2>
+        <h2><span data-i18n-es>Cómo implementamos tu recepcionista IA en WhatsApp</span><span data-i18n-en>How we deploy your WhatsApp AI receptionist</span></h2>
         <p class="section-sub">
-          <span data-i18n-es>Tres pasos. Funcional en menos de 72 horas.</span>
-          <span data-i18n-en>Three steps. Up and running in under 72 hours.</span>
+          <span data-i18n-es>Tres pasos. Funcional en menos de 72 horas. Sin cambiar tu software actual.</span>
+          <span data-i18n-en>Three steps. Up and running in under 72 hours. No need to change your current software.</span>
         </p>
         <div class="steps">
           <div class="step">
@@ -918,9 +1029,9 @@
     </section>
 
     <!-- FAQ -->
-    <section class="block">
+    <section class="block" id="faq" aria-labelledby="faq-heading">
       <div class="container">
-        <h2><span data-i18n-es>Preguntas frecuentes</span><span data-i18n-en>Frequently asked questions</span></h2>
+        <h2 id="faq-heading"><span data-i18n-es>Preguntas frecuentes</span><span data-i18n-en>Frequently asked questions</span></h2>
         <p class="section-sub">
           <span data-i18n-es>Lo que más nos preguntan antes de empezar.</span>
           <span data-i18n-en>What we get asked most before starting.</span>
@@ -942,6 +1053,14 @@
             <summary><span data-i18n-es>¿En qué se diferencian del agente de IA gratis de Meta?</span><span data-i18n-en>How are you different from Meta's free AI agent?</span></summary>
             <div class="faq-a"><span data-i18n-es>El agente de Meta solo responde los mensajes que ya te llegan. AI Squads te trae clientes con anuncios de Google y SEO, conecta la conversación con tu trastienda (calendario, POS, cocina, CRM), lo configuramos y damos soporte por ti, y todo a un precio fijo con un partner local en español.</span><span data-i18n-en>Meta's agent only answers messages that already reach you. AI Squads brings you customers with Google ads and SEO, wires the conversation into your back office (calendar, POS, kitchen, CRM), sets it up and supports it for you, all at a flat price with a local partner in Spanish.</span></div>
           </details>
+          <details class="faq-item">
+            <summary><span data-i18n-es>¿Cuántas citas puede recuperar la IA por mes?</span><span data-i18n-en>How many appointments can the AI recover per month?</span></summary>
+            <div class="faq-a"><span data-i18n-es>Depende del volumen de tu clínica, pero estudios del sector dental muestran que entre el 30–40% de las llamadas entrantes no se contestan durante y fuera de horario laboral (ADA Practice Survey, 2022). Un asistente IA disponible 24/7 recupera ese porcentaje directamente en citas agendadas — típicamente entre 15 y 60 citas adicionales por mes para una clínica de tamaño mediano.</span><span data-i18n-en>It depends on your clinic volume, but dental industry research shows 30–40% of inbound calls go unanswered during and outside business hours (ADA Practice Survey, 2022). A 24/7 AI assistant converts that lost traffic directly into booked appointments — typically 15 to 60 additional appointments per month for a mid-size clinic.</span></div>
+          </details>
+          <details class="faq-item">
+            <summary><span data-i18n-es>¿Funciona para restaurantes con plataformas como Rappi o iFood?</span><span data-i18n-en>Does it work alongside delivery platforms like Rappi or iFood?</span></summary>
+            <div class="faq-a"><span data-i18n-es>Sí. El asistente IA de AI Squads atiende los pedidos directos por WhatsApp, que generan un margen hasta un 30% mayor que los pedidos a través de plataformas de terceros que cobran comisiones. Lo integramos con tu POS o sistema de cocina para que el ticket aparezca automáticamente — sin doble trabajo de captura.</span><span data-i18n-en>Yes. AI Squads' assistant handles direct WhatsApp orders, which generate up to 30% higher margins than third-party platforms that charge commissions. We integrate with your POS or kitchen display so the ticket appears automatically — no double-entry.</span></div>
+          </details>
         </div>
       </div>
     </section>
@@ -957,8 +1076,8 @@
             <a href="https://wa.me/13058894221?text=Hola,%20quiero%20ver%20el%20demo%20del%20asistente" class="cta-button">
               <span data-i18n-es>Habla con nuestro demo en WhatsApp</span><span data-i18n-en>Chat with our WhatsApp demo</span>
             </a>
-            <a href="mailto:alex@aisquads.ai" class="cta-button secondary">
-              <span data-i18n-es>Escríbenos por email</span><span data-i18n-en>Email us</span>
+            <a href="https://calendly.com/alex-aisquads/demo" class="cta-button secondary" target="_blank" rel="noopener">
+              <span data-i18n-es>Agendar una llamada de 15 min</span><span data-i18n-en>Book a 15-min call</span>
             </a>
           </div>
         </div>
